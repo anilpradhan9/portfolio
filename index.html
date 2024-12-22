@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            height: 75px;
+            background-color: rgb(33, 37, 41);
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+
+        #Hleft {
+            color: rgb(255, 255, 255);
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #hmidle span {
+            margin-left: 12px;
+            margin-right: 12px;
+            font-size: 19px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(170, 162, 162);
+        }
+
+        header button {
+            padding: 10px;
+            font-size: 25px;
+            width: 188px;
+            background-color: rgb(255, 213, 0);
+            border-radius: 23px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* font-weight: bold; */
+        }
+
+        #body {
+            height: 79vh;
+            background-color: white;
+            margin-bottom: 00px;
+        }
+
+        #Secondcon {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+
+        #ImgTag {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        #grid-2 {
+            display: flex;
+            align-items: center;
+        }
+
+        #Anil {
+            width: 350px;
+            text-align: center;
+            font-size: 36px;
+            background-color: black;
+            color: white;
+            /* font-weight: bold; */
+            padding: 12px;
+            border-radius: 35px;
+        }
+
+        #Hello {
+            background-color: yellow;
+            width: 390px;
+            border-radius: 36px;
+            padding: 12px;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        #Third {
+            height: 500px;
+            margin: 0 36px 50px 36px;
+        }
+
+        #LineThree {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            height: 500px;
+        }
+
+        #paraParent {
+            width: 500px;
+        }
+
+        #para {
+            font-size: 22px;
+            line-height: 33px;
+        }
+
+        #parah2 {
+            font-size: 35px;
+        }
+
+        #imagstags {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            border-radius: 20px;
+        }
+
+        #images {
+            border-radius: 30px;
+            margin-top: 150px;
+        }
+
+        #grand {
+            display: flex;
+            justify-content: center;
+        }
+
+        #UL {
+            display: flex;
+            margin-left: -41px;
+        }
+
+        li {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        #ulc {
+            font-weight: bold;
+        }
+
+        #per {
+            color: black;
+            font-weight: bold;
+        }
+
+        #four,
+        #fiveLine {
+            margin: 0 36px 50px 36px;
+        }
+
+        #four-chi,
+        #Usingflex {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 45px;
+        }
+
+        #four-chi div {
+            width: 345px;
+            padding: 12px;
+        }
+
+        #four-chi p {
+            line-height: 23px;
+            font-size: 20px;
+        }
+
+        #five-child {
+            height: 500px;
+        }
+
+        #fiveHeading {
+            font-size: 27px;
+            text-align: center;
+        }
+
+        #Usingflex-2 {
+            width: 380px;
+            display: flex;
+            margin-top: 80px;
+            padding: 18px;
+        }
+
+        #fiveimg {
+            overflow: hidden;
+        }
+
+        #fiveimgg {
+            overflow: hidden;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        #AK {
+            /* padding: 9px; */
+            margin-top: 9px;
+        }
+
+        #Mkl {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        #skl {
+            font-size: 22px;
+            /* font-weight: bold; */
+            line-height: 28px;
+        }
+
+        #sixline,
+        #sevenline {
+            margin: 0 36px 50px 80px;
+            height: 80vh;
+            padding: 6px;
+        }
+
+        #sevenline-child {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+
+        .Nameuser {
+            border-bottom: 1px solid red;
+            /* box-shadow: 2px 2px 2px red; */
+            outline: none;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .span span {
+            margin-left: 9px;
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 10px 30px 10px 30px;
+            background-color: yellow;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <div id="Hleft">
+            Anil Kumar Pradhan
+        </div>
+        <div id="hmidle">
+            <span><a href="">Indoduction</a></span>
+            <span><a href="">About Me</a></span>
+            <span><a href="">Reviews</a></span>
+            <span><a href="">Contact</a></span>
+        </div>
+        <div>
+            <button>Download Cv</button>
+        </div>
+    </header>
+    <div id="body">
+        <div id="Secondcon">
+            <div id="ImgTag">
+                <img src="./images/Anil.png" width="70%">
+            </div>
+            <div id="grid-2">
+                <div>
+                    <div id="Anil">Anil,a digital nomad</div><br>
+                    <div id="Hello">anilkumarpradhan1234@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Third">
+        <div id="LineThree">
+            <div id="grand">
+                <div id="paraParent">
+                    <h2 id="parah2">This is Anil's Resume</h2>
+                    <p id="para">Ben Resume HTML Template is brought to you by Tooplate website. You can feel free to
+                        edit and use
+                        this
+                        page for your small site. You are allowed to use this HTML template for any kind of purpose.
+                        In pellentesque metus nibh, eu efficitur tortor dignissim id. Duis a quam vel odio malesuada
+                        porttitor.
+                        Suspendisse potenti. Morbi id auctor ante. Etiam vitae vulputate eros, ut pulvinar.</p>
+                    <div id="UL">
+                        <ul id="ulc">
+                            <li>Full Name :</li>
+                            <li>Date of Birth:</li>
+                            <li>Website :</li>
+                            <li>Email :</li>
+                        </ul>
+                        <ul>
+                            <li>Anil Pradhan</li>
+                            <li>07.1.2001</li>
+                            <li>My portfolio</li>
+                            <li><a href="" id="per">anilkumarpradhan1234@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="imagstags">
+                    <img src="./images/first-grid-3.jpg" id="images" width="500">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="four">
+        <div id="four-chi">
+            <div>
+                <h2>Integer volutpat</h2>
+                <p>Sed eu risus tincidunt, finibus dolor non, gravida ex. Donec lacinia mi nec erat tempus, vel
+                    consectetur ante scelerisque. Ut blandit, risus in venenatis ultricies, lacus tellus fermentum.</p>
+            </div>
+            <div>
+                <h2>Mauris semper</h2>
+                <p>Cras et nisl vestibulum, accumsan elit sed, pretium enim. Vestibulum in condimentum magna. Maecenas
+                    quam magna, iaculis eu turpis et, commodo pulvinar leo.</p>
+            </div>
+            <div>
+                <h2>Integer id neque</h2>
+                <p>Duis at mollis leo, venenatis congue ex. Cras urna dui, gravida euismod lectus et, cursus tempor
+                    nulla. Praesent at turpis quis ex tristique gravida quis eget eros.</p>
+            </div>
+        </div>
+    </div>
+    <div id="fiveLine">
+        <div id="five-child">
+            <div id="fiveHeading">What People say</div>
+            <div id="Usingflex">
+                <div id="Usingflex-2">
+                    <div>
+                        <img src="./images/fiveone.png" id="fiveimgg" alt="">
+                    </div>
+                    <div>
+                        <div id="skl">Sed ut Perspiciatis unde onmis iste natus error sit volupratem</div>
+                        <div id="AK">
+                            <div id="Mkl">Nil</div>
+                            <div id="skll">Art Director</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Usingflex-2">
+                    <div>
+                        <img src="./images/fivetwo.png" id="fiveimgg" alt="">
+                    </div>
+                    <div>
+                        <div id="skl">Sed ut Perspiciatis unde onmis iste natus error sit volupratem</div>
+                        <div id="AK">
+                            <div id="Mkl">Aki</div>
+                            <div id="skll">Marketing Director</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Usingflex-2">
+                    <div>
+                        <img src="./images/fivethree.png" id="fiveimgg" alt="">
+                    </div>
+                    <div>
+                        <div id="skl">Sed ut Perspiciatis unde onmis iste natus error sit volupratem</div>
+                        <div id="AK">
+                            <div id="Mkl">Akhiles</div>
+                            <div id="skll">Product Manger</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sixline">
+            <h1>Frequently Asked Questions</h1>
+            <div class="accordion" id="Acros">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-target="#Spk" data-bs-toggle="collapse">Are those HTML
+                            templates absolute free for any kind of uges ?</button>
+                    </div>
+                    <div class="accordion-collapse" id="Spk" data-bs-parent="#Acros">
+                        <div class="accordion-body">
+                            <div>Yes, they are 100% free and there is no hidden charge.</div>
+                            <div>They can be used for your commercial websites.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-target="#mpk" data-bs-toggle="collapse">I cannot find a
+                            suitable HTML template. Can i request new template ?</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="mpk" data-bs-parent="#Acros">
+                        <div class="accordion-body">
+                            <div>Yes. please tell us what you need .We will try our best to fulfill it</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-target="#jk" data-bs-toggle="collapse">Are those HTML
+                            templates absolute free for any kind of uges ?</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="jk" data-bs-parent="#Acros">
+                        <div class="accordion-body">
+                            <div>Yes, they are 100% free and there is no hidden charge.</div>
+                            <div>They can be used for your commercial websites.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-target="#mmk" data-bs-toggle="collapse">Can i use them
+                            as a CMS theme or a part of website builder ?</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="mmk" data-bs-parent="#Acros">
+                        <div class="accordion-body">
+                            <div>Yes, you can use them..</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-target="#kk" data-bs-toggle="collapse">Are those HTML
+                            templates absolute free for any kind of uges ?</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="kk" data-bs-parent="#Acros">
+                        <div class="accordion-body">
+                            <div>Yes, they are 100% free and there is no hidden charge.</div>
+                            <div>They can be used for your commercial websites.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>Molestie, id maximus odio imperdiet. Quisque eget tincidunt velit, ac tristique ante. Maecenas libero
+                tempus</div>
+        </div>
+        <div id="sevenline">
+            <div id="sevenline-child">
+                <form>
+                    <div>
+                        <div>Full Name</div>
+                        <input type="text" class="Nameuser" size="50">
+                    </div>
+                    <div>
+                        <div>Year Email</div>
+                        <input type="email" size="50">
+                    </div>
+                    <div>
+                        <div>Message</div>
+                        <textarea name="" cols="50" rows="7" id=""></textarea>
+                    </div>
+                    <button class="btn">Send</button>
+                </form>
+                <aside>
+                    <h1>Say Hello</h1>
+                    <div>010-020-0340</div>
+                    <div>hello@domain.com </div>
+                    <div class="span">
+                        <span class="bi bi-facebook"></span>
+                        <span class="bi bi-twitter"></span>
+                        <span class="bi bi-instagram"></span>
+                        <span class="bi bi-linkedin"></span>
+                        <span class="bi bi-youtube"></span>
+                    </div>
+                    <br><br><br>
+                    <div>Copyright © 2045 Ben Resume Page</div>
+                    <div>Design: Tooplate</div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
